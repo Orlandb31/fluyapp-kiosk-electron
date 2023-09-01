@@ -22,7 +22,7 @@ const option = require('update-electron-app')({
 if (require("electron-squirrel-startup")) {
   app.quit();
 }
-if (process.env.NODE_ENV === 'production') { updateElectronApp(option); }
+//if (process.env.NODE_ENV === 'production') { updateElectronApp(option); }
 updateElectronApp(option);
 // Make sure to call this ONCE.
 const createStores = (): void => {
