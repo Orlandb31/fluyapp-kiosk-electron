@@ -13,18 +13,17 @@ import settings from "./render/helpers/config";
 const updateElectronApp = require('update-electron-app');
 const { log } = useLogger()
 
-/* const option = require('update-electron-app')({
-  repo: 'https://orlandb@bitbucket.org/xplorpty/fluyapp-kiosk-electron.git',
-  updateInterval: '1 hour',
+const option = require('update-electron-app')({
+  repo: 'https://github.com/Orlandb31/fluyapp-kiosk-electron.git',
+  updateInterval: '5 minutes',
 
-}) */
+})
 
 if (require("electron-squirrel-startup")) {
   app.quit();
 }
-if (process.env.NODE_ENV === 'production') { updateElectronApp(); }
-
-
+if (process.env.NODE_ENV === 'production') { updateElectronApp(option); }
+updateElectronApp(option);
 // Make sure to call this ONCE.
 const createStores = (): void => {
   new Store({

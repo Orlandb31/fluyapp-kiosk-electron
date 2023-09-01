@@ -1,11 +1,11 @@
 {
   "name": "fluyapp-kiosk",
   "productName": "fluyapp-kiosk",
-  "version": "2.0.6",
+  "version": "2.0.8",
   "description": "Fluyapp kiosk :)",
   "repository": {
     "type": "git",
-    "url": " https://orlandb@bitbucket.org/xplorpty/fluyapp-kiosk-electron.git"
+    "url": "https://github.com/Orlandb31/fluyapp-kiosk-electron.git"
   },
   "main": ".webpack/main",
   "scripts": {
@@ -45,7 +45,7 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
     "@electron-forge/plugin-webpack": "^6.0.0-beta.63",
-    "@electron-forge/publisher-github": "^6.0.0-beta.63",
+    "@electron-forge/publisher-github": "^6.4.1",
     "@types/escpos": "^2.5.2",
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",

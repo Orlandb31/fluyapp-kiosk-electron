@@ -11,7 +11,7 @@ module.exports = {
   packagerConfig: {
     asar: true,
   },
-  publishers: [
+  /* publishers: [
     {
       name: "@electron-forge/publisher-bitbucket",
       config: {
@@ -24,7 +24,21 @@ module.exports = {
         password: process.env.BITBUCKET_PASSWORD,
       },
     },
+  ], */
+   publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'Orlandb31',
+          name: 'fluyapp-kiosk-electron'
+        },
+        prerelease: false
+      }
+    }
   ],
+
+
   makers: [
     // https://www.electronforge.io/config/makers
 

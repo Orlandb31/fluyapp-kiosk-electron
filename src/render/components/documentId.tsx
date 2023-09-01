@@ -44,7 +44,7 @@ const Index = (props: Props) => {
           </div>
         }
 
-        <GeneralText label='BIENVENIDO!' size={70} />
+        <GeneralText label='BIENVENIDOsssss!' size={70} />
         <GeneralText label='Por favor, ingresa tu número de identificación' size={70} />
         <div className='mt-10'>
           <GeneralInput label='Ingresa tu número de cédula' type='phone-pad' size={40}
@@ -81,11 +81,11 @@ const Index = (props: Props) => {
               });
 
 
-  
+
               const responseName: any = await msProviderAPix.getName(subscriber?.documentId || '')
-              
+
               log(`getname reponse - ${JSON.stringify(responseName)}`);
-        
+
               if (responseName && responseName[0]) {
                 log(`getname completed - ${subscriber?.documentId} // response: ${responseName[0].primerNombrePaciente} ${responseName[0].segundoNombrePaciente && responseName[0].segundoNombrePaciente != 'null' ? responseName[0].segundoNombrePaciente : ''}`);
                 setStep({
@@ -97,10 +97,10 @@ const Index = (props: Props) => {
                 log('getname failed - bad response');
                 setStep({ type: 'nonAuth' })
               }
- 
+
               setLoading(false);
-              
-            } catch (e: any) { 
+
+            } catch (e: any) {
 
               log(`fallo en servicios - ${subscriber?.documentId} - ${e?.message}`);
               setStep({ type: 'nonAuthx', message: e?.message || 'GENERAL' })
