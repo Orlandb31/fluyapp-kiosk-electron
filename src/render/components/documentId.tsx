@@ -44,7 +44,7 @@ const Index = (props: Props) => {
           </div>
         }
 
-        <GeneralText label='BIENVENIDOsssss!' size={70} />
+        <GeneralText label='BIENVENIDESSS!' size={70} />
         <GeneralText label='Por favor, ingresa tu número de identificación' size={70} />
         <div className='mt-10'>
           <GeneralInput label='Ingresa tu número de cédula' type='phone-pad' size={40}

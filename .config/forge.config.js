@@ -33,7 +33,7 @@ module.exports = {
           owner: 'Orlandb31',
           name: 'fluyapp-kiosk-electron'
         },
-        prerelease: false
+        prerelease: true
       }
     }
   ],

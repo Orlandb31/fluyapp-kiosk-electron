@@ -49,14 +49,16 @@ const createWindow = (): void => {
 
 
     },
-    alwaysOnTop: true, // enable always on top to prevent other windows from appearing above it
-    kiosk: true // enable kiosk mode, makes it full screen and what not
+    alwaysOnTop: false, // enable always on top to prevent other windows from appearing above it
+    kiosk: false // enable kiosk mode, makes it full screen and what not
     // to disable the top bar / frame completely uncomment the next line -
     // if you do this you will have to set up a css class to allow certain parts of your app to be "draggable"
 
     // frame: false
   });
 
+
+  mainWindow.webContents.openDevTools();
   const patchCSP = () => {
     mainWindow.webContents.session.webRequest.onHeadersReceived((details, callback) => {
       callback({
